@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  background: var(--color-gray);
+}
+
+.img__container {
+  flex: 1;
+}
+
+.img__container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  margin: 4rem 0;
+}
+
+.item {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.description h4 {
+  color: var(--color-primary);
+}
+
+@media (max-width: 990px) {
+  .img__container {
+    display: none;
+  }
+}

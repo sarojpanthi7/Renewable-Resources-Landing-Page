@@ -1,0 +1,91 @@
+.container {
+  background: url('../../public/images/donation-bg.jpg');
+  padding: 90px 5% 45px;
+  background-position: center -35.5472px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  padding: 2rem;
+  color: var(--color-white);
+  border-radius: var(--radius);
+  /* width: 30rem; */
+}
+
+.card:nth-child(1) {
+  background: url(../../public/images/save1.jpg);
+}
+
+.card:nth-child(2) {
+  background: url(../../public/images/save2.jpg);
+}
+
+.header {
+  position: relative;
+  margin-bottom: 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.firstHeader {
+  color: var(--color-secondary);
+}
+
+.firstHeader ~ .underline {
+  background: var(--color-secondary);
+}
+
+.secondHeader {
+  color: var(--color-primary);
+}
+
+.underline {
+  background: var(--color-primary);
+  width: 4rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: -0.9rem;
+  left: 0;
+  transition: var(--transition);
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: var(--radius);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.firstBtn {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.firstBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.secondBtn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.secondBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}

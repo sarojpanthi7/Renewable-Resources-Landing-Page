@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --transition: all 500ms ease;
+  --radius: 0.4rem;
+  --color-secondary: #feca28;
+  --color-primary: #5dc269;
+  --color-brown: #3f3221;
+  --color-dark-brown: #2d2418;
+  --color-white: #fff;
+  --color-gray: #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: var(--color-brown);
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}

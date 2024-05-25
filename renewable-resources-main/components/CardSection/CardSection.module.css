@@ -1,0 +1,18 @@
+.cardSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 4rem 2rem;
+}
+
+@media (max-width: 990px) {
+  .cardSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .cardSection {
+    grid-template-columns: 1fr;
+  }
+}
